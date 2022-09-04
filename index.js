@@ -1,27 +1,27 @@
 // 1. Создать функцию isAdult, которая будет проверять возраст пользователя на совершеннолетие (Пусть совершеннолетним считается пользователь, которому исполнилось 18 лет):
 
 // const isAdult = function (num) {
-//   if (isNaN(num) || num > 100) return null;
+//   if (isNaN(num) || num > 100 || num < 0) return null;
 //   if (num >= 18) {
 //     return !!num;
 //   } else {
 //     return !num;
 //   }
 // };
-// console.log(isAdult(20));
+// console.log(isAdult(17));
 
 // const isAdult = function (num) {
 //     let result;
-//     result = isNaN(num) || num > 100 ? null
+//     result = isNaN(num) || num > 100 || num < 0 ? null
 //     : result = num >= 18 ? true : false;
 //     return result ;
 // }
-// console.log(isAdult(120));
+// console.log(isAdult(17));
 
 // 2.  Создать функцию checkMultiplicity, которая принимает два числа и проверяет кратность первого вторым:
 
 // const checkMultiplicity = function (num1, num2) {
-//   if (isNaN(num1) || isNaN(num2)) return null;
+//   if (isNaN(num1) || isNaN(num2) || num1 < 0 || num2 < 0 ) return null;
 //   if (num1 % num2 === 0) {
 //     return true;
 //   } else {
@@ -32,7 +32,7 @@
 
 // const checkMultiplicity = function (num1,num2) {
 //     let result;
-//     result = isNaN(num1) || isNaN(num2) ? null :
+//     result = isNaN(num1) || isNaN(num2) || num1 < 0 || num2 < 0 ? null :
 //     result = num1 % num2 === 0 ? true : false ;
 //     return result;
 // }
@@ -41,7 +41,7 @@
 // 3. Проверка возможности треугольника. Создать функцию которая принимает длины сторон треугольника; функция возвращает true если треугольник возможен и false если нет
 
 // const trianglePossibility = function (a, b, c) {
-//   if (isNaN(a) || isNaN(b) || isNaN(c)) return null;
+//   if (isNaN(a) || isNaN(b) || isNaN(c) || a < 0 || b < 0 || c < 0) return null;
 //   if (a + b > c && a + c > b && b + c > a) {
 //     return true;
 //   } else {
@@ -52,7 +52,7 @@
 
 // const trianglePossibility = function (a, b, c) {
 //   let result;
-//   result = isNaN(a) || isNaN(b) || isNaN(c) ? null :
+//   result = isNaN(a) || isNaN(b) || isNaN(c) || a < 0 || b < 0 || c < 0 ? null :
 //   result = a + b > c && a + c > b && b + c > a ? true : false;
 //   return result;
 // };
