@@ -61,34 +61,46 @@
 // 4. написть функцию, которая принимает число и возвращает сумму нечетных чисел от 1 до указанного числа
 
 // const returnSumNams = function (num) {
-//   if (isNaN(num) || num <= 0) return null;
+//   if (isNaN(num) || num <= 0) {
+//     return null;
+//   }
 //   let sum = 0;
 //   for (let i = 1; i < num; i++) {
-//     if (i % 2 !== 0) sum += i;
+//     if (i % 2 !== 0){
+//         sum += i;
+//     }
 //   }
 //   return sum;
 // };
 // console.log(returnSumNams(12));
 
 // const returnSumNams = function (num) {
-//   if (isNaN(num) || num <= 0) return null;
+//   if (isNaN(num) || num <= 0) {
+//     return null;
+//   }
 //   let sum = 0;
 //   let i = 1;
 //   while (i < num) {
-//     if (i % 2 !== 0) sum += i;
-//      i++;
+//     if (i % 2 !== 0) {
+//       sum += i;
+//       i++;
+//     }
 //   }
 //   return sum;
 // };
 // console.log(returnSumNams(9));
 
 // const returnSumNams = function (num) {
-//   if (isNaN(num) || num <= 0) return null;
+//   if (isNaN(num) || num <= 0){
+//     return null;
+//   }
 //   let sum = 0;
 //   let i = 1;
 //   do {
-//     if (i % 2 !== 0) sum += i;
-//     i++;
+//     if (i % 2 !== 0){
+//         sum += i;
+//         i++;
+//     }
 //   } while (i < num);
 //   return sum;
 // };
@@ -97,38 +109,59 @@
 // 5. Создать функцию, которая будет проверять, является ли число простым. Простым является неотрицательное число, которое делится нацело только на самого себя или на 1.
 
 // const simpleСheckNum = function (num) {
-//   if (isNaN(num) || num <= 0) return null;
+//   if (isNaN(num) || num <= 0) {
+//     return null;
+//   }
 //   let sum = 0;
 //   for (let i = 2; i <= num; i++) {
-//     if (num % i === 0) sum += i;
+//     if (num % i === 0) {
+//       sum += i;
+//     }
 //   }
-//   if (sum === num) return num + " простое число";
-//   else return "число не простое !";
+//   if (sum === num) {
+//     return num;
+//   } else {
+//     return false;
+//   }
 // };
-// console.log(simpleСheckNum(5));
+// console.log(simpleСheckNum(9));
 
 // const simpleСheckNum = function (num) {
-//   if (isNaN(num) || num <= 0) return null;
+//   if (isNaN(num) || num <= 0) {
+//     return null;
+//   }
 //   let sum = 0;
 //   let i = 1;
 //   while (i <= num) {
-//     if (num % i === 0) sum += i;
-//     i++;
+//     if (num % i === 0) {
+//       sum += i;
+//       i++;
+//     }
 //   }
-//   if (sum - 1 === num) return num + " простое число";
-//   else return "число не простое !";
+//   if (sum - 1 === num) {
+//     return num;
+//   } else {
+//     return false;
+//   }
 // };
 // console.log(simpleСheckNum(3));
 
 // const simpleСheckNum = function (num) {
-//   if (isNaN(num) || num <= 0 ) return null;
+//   if (isNaN(num) || num <= 0) {
+//     return null;
+//   }
 //   let sum = 0;
 //   let i = 1;
 //   do {
-//     if (num % i === 0) sum += i;
-//     i++;
+//     if (num % i === 0) {
+//       sum += i;
+//       i++;
+//     }
 //   } while (i <= num);
-//   if (sum - 1 === num) return num + " простое число";
-//   else return "число не простое !";
+//   if (sum - 1 === num) {
+//     return num;
+//   } else {
+//     return false;
+//   }
 // };
 // console.log(simpleСheckNum(3));
